@@ -1,0 +1,12 @@
+{
+  "id": "com.luisgil.minitools.agent-pulse",
+  "name": "Agent Pulse",
+  "version": "0.1.0",
+  "minimumHostVersion": "1.0.0",
+  "contractVersion": "1",
+  "systemImage": "sparkles",
+  "capabilities": ["processInspection", "notifications"],
+  "tabs": [{"id":"agentPulse","title":"IA","systemImage":"sparkles","presentation":"both"}],
+  "priority": 30,
+  "repositoryURL": "https://github.com/LuisGil15/MiniTools-Plugins"
+}

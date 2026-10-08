@@ -1,0 +1,12 @@
+{
+  "id": "com.luisgil.minitools.ports",
+  "name": "Ports",
+  "version": "0.1.0",
+  "minimumHostVersion": "1.0.0",
+  "contractVersion": "1",
+  "systemImage": "network",
+  "capabilities": ["processInspection", "processTermination"],
+  "tabs": [{"id":"ports","title":"Ports","systemImage":"network","presentation":"both"}],
+  "priority": 20,
+  "repositoryURL": "https://github.com/LuisGil15/MiniTools-Plugins"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "com.luisgil.minitools.mini-terminal",
+  "name": "Mini Terminal",
+  "version": "0.1.0",
+  "minimumHostVersion": "1.0.0",
+  "contractVersion": "1",
+  "systemImage": "terminal",
+  "capabilities": ["terminalSession"],
+  "tabs": [{"id":"mini-terminal","title":"Terminal","systemImage":"terminal","presentation":"both"}],
+  "priority": 20,
+  "repositoryURL": "https://github.com/LuisGil15/MiniTools-Plugins"
+}

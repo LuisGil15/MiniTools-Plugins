@@ -1,0 +1,12 @@
+{
+  "id": "com.luisgil.minitools.launchpad",
+  "name": "Launchpad",
+  "version": "0.1.0",
+  "minimumHostVersion": "1.0.0",
+  "contractVersion": "1",
+  "systemImage": "square.grid.2x2",
+  "capabilities": ["applicationLaunch", "applicationDiscovery"],
+  "tabs": [{"id":"launchpad","title":"Launchpad","systemImage":"square.grid.2x2","presentation":"both"}],
+  "priority": 20,
+  "repositoryURL": "https://github.com/LuisGil15/MiniTools-Plugins"
+}

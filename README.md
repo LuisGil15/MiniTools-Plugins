@@ -9,9 +9,9 @@ signing policy are being finalized.
 must include a stable plugin identifier, semantic version, compatible host
 version, download URL, checksum, and requested capabilities.
 
-Packages use the `.minitoolplugin` extension and should be attached to a GitHub
-release. MiniTools must validate the manifest and SHA-256 checksum before
-installing or replacing a package.
+Packages are single JSON manifests with the `.minitoolplugin` extension and
+should be attached to a GitHub release. MiniTools validates the manifest and
+host compatibility before installing a package.
 
 ## Safety rules
 

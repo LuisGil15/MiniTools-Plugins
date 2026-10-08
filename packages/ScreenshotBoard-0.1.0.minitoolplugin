@@ -1,0 +1,12 @@
+{
+  "id": "com.luisgil.minitools.screenshot-board",
+  "name": "Screenshot Board",
+  "version": "0.1.0",
+  "minimumHostVersion": "1.0.0",
+  "contractVersion": "1",
+  "systemImage": "rectangle.stack",
+  "capabilities": ["screenshotEvents", "fileDragAndDrop"],
+  "tabs": [{"id":"screenshot-board","title":"Capturas","systemImage":"rectangle.stack","presentation":"both"}],
+  "priority": 20,
+  "repositoryURL": "https://github.com/LuisGil15/MiniTools-Plugins"
+}
