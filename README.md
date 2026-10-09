@@ -7,6 +7,7 @@
 [![Catalog schema](https://img.shields.io/badge/catalog-v1-0A84FF)](./index.json)
 [![MiniTools](https://img.shields.io/badge/requires-MiniTools_1.0%2B-black)](https://github.com/LuisGil15/MiniTools)
 [![Packages](https://img.shields.io/badge/extensions-6-30D158)](#extension-gallery)
+[![External runtime](https://img.shields.io/badge/external_runtime-in_development-FF9F0A)](#external-plugin-status)
 
 [Get MiniTools](https://github.com/LuisGil15/MiniTools/releases/latest) ·
 [Browse packages](./packages) ·
@@ -18,6 +19,18 @@
 This repository is the official distribution catalog for MiniTools extensions.
 Each extension adds one focused capability while MiniTools keeps control of the
 notch, animations, permissions, and shared state.
+
+## External plugin status
+
+The package format, manifest schema, catalog, checksum validation, file
+installer, and update flow are available now. MiniTools 1.0.x can install and
+update the official packages in this repository, whose Swift runtimes are
+already linked into the signed host app.
+
+We are actively building the signed, isolated runtime that will allow packages
+from independent developers to execute without modifying MiniTools itself.
+Until that boundary ships, third-party authors can design and validate packages
+against the published contract, but MiniTools will not execute their code.
 
 ## Extension gallery
 
