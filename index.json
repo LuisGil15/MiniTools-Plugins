@@ -1,12 +1,17 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-08T16:00:00-06:00",
+  "generatedAt": "2026-10-08T20:00:00-06:00",
   "plugins": [
     {
       "id": "com.luisgil.minitools.agent-pulse",
       "name": "Agent Pulse",
+      "summary": "Sigue la actividad de Codex desde la island.",
+      "description": "Muestra trabajo activo, solicitudes de ayuda y finalizaciones con un pulso alrededor del notch.",
       "version": "0.1.0",
       "minimumHostVersion": "1.0.0",
+      "systemImage": "sparkles",
+      "category": "Desarrollo",
+      "featured": true,
       "downloadURL": "https://raw.githubusercontent.com/LuisGil15/MiniTools-Plugins-Distribution/main/packages/AgentPulse-0.1.0.minitoolplugin",
       "sha256": "c9390e1d367fb4219a5639f4ef14140aeec0b9d7d33afae77f4ba4e98b8dad38",
       "capabilities": ["processInspection", "notifications"]
@@ -14,8 +19,13 @@
     {
       "id": "com.luisgil.minitools.caffeine",
       "name": "Caffeine",
+      "summary": "Mantén tu Mac despierta cuando lo necesites.",
+      "description": "Activa sesiones temporizadas o indefinidas y muestra un indicador configurable alrededor del notch.",
       "version": "0.1.0",
       "minimumHostVersion": "1.0.0",
+      "systemImage": "cup.and.saucer.fill",
+      "category": "Utilidades",
+      "featured": false,
       "downloadURL": "https://raw.githubusercontent.com/LuisGil15/MiniTools-Plugins-Distribution/main/packages/Caffeine-0.1.0.minitoolplugin",
       "sha256": "299c6cf7f3b005dd7f21af7be3ec66fb77496c9f2a4437dab475d178d9cee7de",
       "capabilities": ["keepAwake"]
@@ -23,8 +33,13 @@
     {
       "id": "com.luisgil.minitools.launchpad",
       "name": "Launchpad",
+      "summary": "Abre tus aplicaciones favoritas desde la island.",
+      "description": "Arrastra aplicaciones desde Finder o el Dock y crea un lanzador rápido que siempre está a la mano.",
       "version": "0.1.0",
       "minimumHostVersion": "1.0.0",
+      "systemImage": "square.grid.2x2",
+      "category": "Productividad",
+      "featured": true,
       "downloadURL": "https://raw.githubusercontent.com/LuisGil15/MiniTools-Plugins-Distribution/main/packages/Launchpad-0.1.0.minitoolplugin",
       "sha256": "5d1334ccb89a363d806e966f06af43ea21c0c21ac02456b06f12325d20ebd029",
       "capabilities": ["applicationLaunch", "applicationDiscovery"]
@@ -32,8 +47,13 @@
     {
       "id": "com.luisgil.minitools.mini-terminal",
       "name": "Mini Terminal",
+      "summary": "Tu sesión zsh real dentro del notch.",
+      "description": "Ejecuta una sesión PTY interactiva con tu shell de login, historial, señales y tamaño de fuente configurable.",
       "version": "0.1.0",
       "minimumHostVersion": "1.0.0",
+      "systemImage": "terminal",
+      "category": "Desarrollo",
+      "featured": true,
       "downloadURL": "https://raw.githubusercontent.com/LuisGil15/MiniTools-Plugins-Distribution/main/packages/MiniTerminal-0.1.0.minitoolplugin",
       "sha256": "343ff45f239ae0ad0e9d79f63650a4fc05205be475f99b8aa7d9840bf706d88f",
       "capabilities": ["terminalSession"]
@@ -41,8 +61,13 @@
     {
       "id": "com.luisgil.minitools.ports",
       "name": "Ports",
+      "summary": "Inspecciona y libera puertos locales.",
+      "description": "Consulta procesos que escuchan en TCP o UDP y finalízalos de forma explícita desde la island.",
       "version": "0.1.0",
       "minimumHostVersion": "1.0.0",
+      "systemImage": "network",
+      "category": "Desarrollo",
+      "featured": false,
       "downloadURL": "https://raw.githubusercontent.com/LuisGil15/MiniTools-Plugins-Distribution/main/packages/Ports-0.1.0.minitoolplugin",
       "sha256": "e0600d8e14158ec385f22a3d8c75907ef80b1429be148ff78782048627820530",
       "capabilities": ["processInspection", "processTermination"]
@@ -50,8 +75,13 @@
     {
       "id": "com.luisgil.minitools.screenshot-board",
       "name": "Screenshot Board",
+      "summary": "Guarda y arrastra tus capturas recientes.",
+      "description": "Recibe nuevas capturas en la island, las mantiene a la mano y permite arrastrarlas a cualquier app.",
       "version": "0.1.0",
       "minimumHostVersion": "1.0.0",
+      "systemImage": "rectangle.stack",
+      "category": "Productividad",
+      "featured": false,
       "downloadURL": "https://raw.githubusercontent.com/LuisGil15/MiniTools-Plugins-Distribution/main/packages/ScreenshotBoard-0.1.0.minitoolplugin",
       "sha256": "f0eb97a0f7142f8f6cfcc23b2b1c09c4687db2ccc0c0313b3d3fb8a66df1a624",
       "capabilities": ["screenshotEvents", "fileDragAndDrop"]
