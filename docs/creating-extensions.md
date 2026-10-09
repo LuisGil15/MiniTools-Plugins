@@ -108,7 +108,7 @@ new semantic version and checksum.
 
 ## 6. Submit the extension
 
-Open a [plugin proposal](https://github.com/LuisGil15/MiniTools-Plugins-Distribution/issues/new?template=plugin-proposal.yml)
+Open a [plugin proposal](https://github.com/LuisGil15/MiniTools-Plugins/issues/new?template=plugin-proposal.yml)
 with:
 
 1. The user problem and why it belongs in the notch.

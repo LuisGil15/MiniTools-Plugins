@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/LuisGil15/MiniTools-Plugins-Distribution/main/schemas/plugin-manifest.schema.json",
+  "$id": "https://raw.githubusercontent.com/LuisGil15/MiniTools-Plugins/main/schemas/plugin-manifest.schema.json",
   "title": "MiniTools Plugin Manifest",
   "type": "object",
   "additionalProperties": false,

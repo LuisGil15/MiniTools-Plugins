@@ -105,7 +105,7 @@ cannot monopolize the notch.
 
 ## Propose an integration
 
-Open an [app integration proposal](https://github.com/LuisGil15/MiniTools-Plugins-Distribution/issues/new?template=app-integration.yml)
+Open an [app integration proposal](https://github.com/LuisGil15/MiniTools-Plugins/issues/new?template=app-integration.yml)
 and include your bundle identifier, event lifecycle, example payloads, expected
 event frequency, and the information users will see.
 
