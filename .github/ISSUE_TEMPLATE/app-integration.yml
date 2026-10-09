@@ -1,0 +1,50 @@
+name: App integration proposal
+description: Propose an app connection to the MiniTools notch
+title: "Integration: "
+labels: ["app integration"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Notch Connect is a Developer Preview and is not available in MiniTools 1.0.x. Your proposal will help shape the stable local API.
+  - type: input
+    id: app
+    attributes:
+      label: App name
+    validations:
+      required: true
+  - type: input
+    id: bundle
+    attributes:
+      label: macOS bundle identifier
+      placeholder: com.example.app
+    validations:
+      required: true
+  - type: textarea
+    id: lifecycle
+    attributes:
+      label: Activity lifecycle
+      description: Which started, updated, attention, and terminal events will the app publish?
+    validations:
+      required: true
+  - type: textarea
+    id: payloads
+    attributes:
+      label: Example events
+      render: json
+    validations:
+      required: true
+  - type: input
+    id: frequency
+    attributes:
+      label: Expected event frequency
+      placeholder: One update every 5 seconds while exporting
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: User-visible data and privacy
+      description: Explain exactly what text or metadata MiniTools would receive.
+    validations:
+      required: true

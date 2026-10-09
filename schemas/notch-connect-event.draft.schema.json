@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/LuisGil15/MiniTools-Plugins-Distribution/main/schemas/notch-connect-event.draft.schema.json",
+  "title": "MiniTools Notch Connect Event — Developer Preview",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "source", "event", "activity", "timestamp"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bundleIdentifier", "name"],
+      "properties": {
+        "bundleIdentifier": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9]+(?:[.-][A-Za-z0-9-]+)+$"
+        },
+        "name": { "type": "string", "minLength": 1, "maxLength": 60 }
+      }
+    },
+    "event": {
+      "enum": [
+        "activity.started",
+        "activity.updated",
+        "activity.needsAttention",
+        "activity.completed",
+        "activity.failed",
+        "activity.cancelled"
+      ]
+    },
+    "activity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "title": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "detail": { "type": "string", "maxLength": 180 },
+        "progress": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "systemImage": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "accentColor": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        }
+      }
+    },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "expiresInSeconds": { "type": "integer", "minimum": 1, "maximum": 3600 }
+  }
+}

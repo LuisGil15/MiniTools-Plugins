@@ -10,7 +10,8 @@
 
 [Get MiniTools](https://github.com/LuisGil15/MiniTools/releases/latest) ·
 [Browse packages](./packages) ·
-[View the catalog](./index.json)
+[View the catalog](./index.json) ·
+[Developer guides](#build-with-minitools)
 
 </div>
 
@@ -31,6 +32,27 @@ notch, animations, permissions, and shared state.
 
 See [the complete extension details](./extensions/README.md), including the
 capabilities each package requests.
+
+## Build with MiniTools
+
+MiniTools is opening its extension surface in stages. The developer portal
+separates what works in the current release from contracts that are still in
+Developer Preview:
+
+- [Create a MiniTools extension](./docs/creating-extensions.md) — manifest,
+  capabilities, packaging, validation, and the current submission flow.
+- [Connect an app to the notch](./docs/connecting-apps.md) — proposed lifecycle
+  events, privacy rules, UX behavior, and the integration roadmap.
+- [Plugin manifest JSON Schema](./schemas/plugin-manifest.schema.json) — the
+  machine-readable contract used by `.minitoolplugin` packages.
+- [Notch Connect event draft](./schemas/notch-connect-event.draft.schema.json) —
+  the proposed event envelope for external apps.
+
+> [!IMPORTANT]
+> MiniTools 1.0.x only enables reviewed first-party runtimes already included
+> in the signed host app. It does not load arbitrary third-party executable
+> code. External plugin IDs and the Notch Connect API require a future MiniTools
+> release; the guides clearly mark those steps as Developer Preview.
 
 ## Install
 
@@ -62,6 +84,13 @@ validates the manifest and host compatibility, and only then installs it in:
 The current first-party packages are manifests that enable runtimes already
 shipped inside the signed and notarized MiniTools app. Arbitrary third-party
 code loading is not enabled yet.
+
+Validate the catalog, package metadata, checksums, and Developer Preview event
+examples with only Python's standard library:
+
+```bash
+python3 scripts/validate.py
+```
 
 ## Publishing rules
 

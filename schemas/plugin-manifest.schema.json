@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/LuisGil15/MiniTools-Plugins-Distribution/main/schemas/plugin-manifest.schema.json",
+  "title": "MiniTools Plugin Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "version",
+    "minimumHostVersion",
+    "contractVersion",
+    "systemImage",
+    "capabilities",
+    "tabs",
+    "priority"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9]+(?:[.-][A-Za-z0-9-]+)+$"
+    },
+    "name": { "type": "string", "minLength": 1, "maxLength": 60 },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$"
+    },
+    "minimumHostVersion": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "contractVersion": { "const": "1" },
+    "systemImage": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "capabilities": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "applicationLaunch",
+          "applicationDiscovery",
+          "notifications",
+          "processInspection",
+          "processTermination",
+          "screenshotEvents",
+          "fileDragAndDrop",
+          "keepAwake",
+          "terminalSession"
+        ]
+      }
+    },
+    "tabs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "systemImage", "presentation"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+          },
+          "title": { "type": "string", "minLength": 1, "maxLength": 30 },
+          "systemImage": { "type": "string", "minLength": 1, "maxLength": 80 },
+          "presentation": { "enum": ["compact", "expanded", "both"] }
+        }
+      }
+    },
+    "priority": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "repositoryURL": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    }
+  }
+}

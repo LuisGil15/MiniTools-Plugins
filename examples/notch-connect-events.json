@@ -1,0 +1,56 @@
+[
+  {
+    "schemaVersion": 1,
+    "source": {
+      "bundleIdentifier": "com.example.builder",
+      "name": "Builder"
+    },
+    "event": "activity.started",
+    "activity": {
+      "id": "release-184",
+      "title": "Building release",
+      "detail": "Preparing the macOS app",
+      "progress": 0,
+      "systemImage": "hammer.fill",
+      "accentColor": "#0A84FF"
+    },
+    "timestamp": "2026-10-08T20:14:00Z",
+    "expiresInSeconds": 900
+  },
+  {
+    "schemaVersion": 1,
+    "source": {
+      "bundleIdentifier": "com.example.builder",
+      "name": "Builder"
+    },
+    "event": "activity.updated",
+    "activity": {
+      "id": "release-184",
+      "title": "Building release",
+      "detail": "Signing the macOS app",
+      "progress": 72,
+      "systemImage": "hammer.fill",
+      "accentColor": "#0A84FF"
+    },
+    "timestamp": "2026-10-08T20:15:00Z",
+    "expiresInSeconds": 900
+  },
+  {
+    "schemaVersion": 1,
+    "source": {
+      "bundleIdentifier": "com.example.builder",
+      "name": "Builder"
+    },
+    "event": "activity.completed",
+    "activity": {
+      "id": "release-184",
+      "title": "Release ready",
+      "detail": "The signed app is ready to distribute",
+      "progress": 100,
+      "systemImage": "checkmark.circle.fill",
+      "accentColor": "#30D158"
+    },
+    "timestamp": "2026-10-08T20:16:00Z",
+    "expiresInSeconds": 60
+  }
+]

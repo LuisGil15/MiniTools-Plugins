@@ -1,0 +1,55 @@
+name: Plugin proposal
+description: Propose a focused extension for the MiniTools island
+title: "Plugin: "
+labels: ["plugin proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        MiniTools 1.0.x only installs reviewed runtimes shipped with the host. Use this form to propose one for a future release.
+  - type: input
+    id: name
+    attributes:
+      label: Extension name
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: What focused problem does this solve, and why does it belong in the notch?
+    validations:
+      required: true
+  - type: textarea
+    id: states
+    attributes:
+      label: Compact and expanded behavior
+      description: Describe the information and actions in each island size.
+    validations:
+      required: true
+  - type: textarea
+    id: capabilities
+    attributes:
+      label: Requested capabilities
+      description: List each capability and explain why it is necessary.
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Data, network, and privacy
+      description: Describe local storage, network destinations, and transmitted fields.
+    validations:
+      required: true
+  - type: textarea
+    id: manifest
+    attributes:
+      label: Sample manifest
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: visuals
+    attributes:
+      label: Visual references
+      description: Drag in screenshots, mockups, or a short interaction video.
