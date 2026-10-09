@@ -43,6 +43,9 @@ Developer Preview:
   capabilities, packaging, validation, and the current submission flow.
 - [Connect an app to the notch](./docs/connecting-apps.md) — proposed lifecycle
   events, privacy rules, UX behavior, and the integration roadmap.
+- [Build with an AI assistant](./docs/ai-assisted-development.md) — a guided
+  workflow and copy-ready prompts that keep generated proposals inside the
+  current MiniTools contract.
 - [Plugin manifest JSON Schema](./schemas/plugin-manifest.schema.json) — the
   machine-readable contract used by `.minitoolplugin` packages.
 - [Notch Connect event draft](./schemas/notch-connect-event.draft.schema.json) —
